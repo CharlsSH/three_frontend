@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const app = require('../app');
+const http = require('http');
+const { sequelize } = require('../config/database');
+
+const PORT = process.env.PORT || 3001;
+
+const server = http.createServer(app);
+
+sequelize.sync().then(() => {
+  server.listen(PORT, () => {
+    console.log(`Backend server is running on http://localhost:${PORT}`);
+  });
+});
