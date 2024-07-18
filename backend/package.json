@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.2",
+    "sequelize": "^6.37.3"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "backend/bin/www",
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "nodemon bin/www"
+  },
+  "keywords": [],
+  "author": "LK",
+  "license": "MIT",
+  "description": "Backend for Next.js and MySQL application",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
